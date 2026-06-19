@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Patient Registration Form</title>
+</head>
+<body>
+    <h1>Patient Registration Form</h1>
+    <p>Please fill out the form below to register as a new patient.</p>
+    <form action="/submit_registration" method="post">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+        </select><br><br>
+
+        <label for="county">County of Residence:</label><br>
+        <select id="county" name="county">
+            <option value="nairobi">Nairobi</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="Kisii">Kisii</option>
+            <option value="nakuru">Nakuru</option>
+            <option value="eldoret">Eldoret</option>
+        </select><br><br>
+
+        <label>Services Required:</label><br>
+        <input type="checkbox" id="consultation" name="services" value="consultaion">
+        <label for="consultation">Consultation</label><br>
+        <input type="checkbox" id="laboratory" name="services" value="laboratory">
+        <label for="laboratory">Laboratory</label><br>
+        <input type="checkbox" id="pharmacy" name="services" value="pharmacy">
+        <label for="pharmacy">Pharmacy</label><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
